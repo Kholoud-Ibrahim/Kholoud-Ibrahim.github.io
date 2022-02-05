@@ -20,9 +20,7 @@ locale: en-US
 title: "Kholoud Space"
 description: "Where Data Topics Find You !"
 baseurl: # the subpath of your site, e.g. "/blog"
-url: "kholoud-ibrahim.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "/"
-destination: ./docs
+url: https://kholoud-ibrahim.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 
 logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
