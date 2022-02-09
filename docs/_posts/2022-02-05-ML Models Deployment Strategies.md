@@ -25,7 +25,7 @@ Shadow Deployment requires the availability of an old version of the system alre
 
 The purpose of the shadow deployment is to gather data about how is your new model performing in production and how it compares to the old one . and then verification of the new model output can take place , and therefore a decision can be taken if the new model is good enough to replace the old one in production or not.
 
-![shadow_deploy.png](attachment: /docs/images/ml_deploy_strategies/shadow_deploy.png)
+![shadow_deploy.png](attachment: https://github.com/Kholoud-Ibrahim/Kholoud-Ibrahim.github.io/blob/gh-pages/docs/images/ml_deploy_strategies/shadow_deploy.png)
 
 ## Canary Deployment
 
