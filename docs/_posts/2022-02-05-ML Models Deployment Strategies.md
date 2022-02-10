@@ -38,7 +38,9 @@ Instead of rolling out the model to the entire user base, only a certain user pe
 The idea is again to collect key metrics of the new models' performance over time. If the model turns out to run robustly, the share of users who are served by the new model can be increased step by step.
 
 
-![canary_deploy.png](attachment:canary_deploy.png)
+<img src="/docs/images/ml_deploy_strategies/canary_deploy.png"  width="800" />
+
+
 
 ## Blue/Green Deployment
 
@@ -47,7 +49,9 @@ The structure of the blue/green deployment is the same as the canary deployment 
 
 The idea is to simply have two environments that are as identical as possible: If something goes wrong with the new model, you can simply reroute all your requests to the old model (rollback).
 
-![blue_green_deploy.png](attachment:blue_green_deploy.png)
+
+<img src="/docs/images/ml_deploy_strategies/blue_green_deploy.png"  width="800" />
+
 
 ## Which Strategy should I use ?
 
