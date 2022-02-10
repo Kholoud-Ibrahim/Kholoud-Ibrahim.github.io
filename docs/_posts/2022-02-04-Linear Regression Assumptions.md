@@ -114,7 +114,7 @@ If the residual errors are dependent, they will likely produce a clear pattern, 
 
 
 <center> Independent residuals </center>
-<b1><center>No Clear Pattern for residuals is observed, indicating in-dependency between them. </b1></center>
+<center>No Clear Pattern for residuals is observed, indicating in-dependency between them. </center>
 
 <img src="/docs/images/linear_regression_assuptions/Dependent_residuals.png"  width="800" />
 <center> Dependent residuals </center>
