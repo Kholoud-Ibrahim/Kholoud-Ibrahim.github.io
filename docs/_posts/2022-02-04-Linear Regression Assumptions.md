@@ -47,13 +47,11 @@ The property of the data set to have a constant variance is called **homoscedast
 
 
 <img src="/docs/images/linear_regression_assuptions/Homo_residual.png"  width="800" />
-
 <center> Homoscedastic Residual Plot </center>
 <center>The variance of the residuals is constant, indicating no relation with X, so, there is no evidence that the model will behave worse at a certain range of X. </center>
 
 
 <img src="/docs/images/linear_regression_assuptions/Hetro_residual.png"  width="800" />
-
 <center> Heteroscedastic Residual Plot </center>
 <center>The Variance of the residuals is low at low ranges of X and increases at the high ranges of X, indicating that the model will behave worse at high ranges of X. </center>
 
@@ -112,15 +110,15 @@ So, the current value of residual error is totally independent on the previous/h
 
 If the residual errors are dependent, they will likely produce a clear pattern, which indicates that there are information that the regression model did not capture and this information turned out to be a residual error, making our model sub-optimal.
 
-![residuals_independce.png](attachment:residuals_independce.png)
+<img src="/docs/images/linear_regression_assuptions/residuals_independce.png"  width="800" />
+
 
 <center> Independent residuals </center>
 <b1><center>No Clear Pattern for residuals is observed, indicating in-dependency between them. </b1></center>
 
-![Dependent_residuals.png](attachment:Dependent_residuals.png)
-
+<img src="/docs/images/linear_regression_assuptions/Dependent_residuals.png"  width="800" />
 <center> Dependent residuals </center>
-<b1><center>There is a Pattern observed, indicating the current value of residual dependent on the previous value. </b1></center>
+<center>There is a Pattern observed, indicating the current value of residual dependent on the previous value.</center>
 
 ### How to test for independence of residual errors?
 
@@ -192,10 +190,12 @@ There are a lot of ways to test for the normality of residual errors, and even t
 
 * **[Jarque-Bera test](https://en.wikipedia.org/wiki/Jarque%E2%80%93Bera_test)**: it’s usually used for large sample size, The test matches the skewness and kurtosis of the data to see if it matches a normal distribution, noting that a perfect normal distribution has a mean of value ‘0’ and kurtosis of value ‘3’.
 > * Skewness tells us how symmetric the distribution is (Is it pulled to the right or the left)
-> ![skewness.png](attachment:skewness.png)
+> <img src="/docs/images/linear_regression_assuptions/skewness.png"  width="800" />
+
+
 
 > * Kurtosis tells us information about the peak and the tail of the curve (think about punching or pulling the normal distribution curve from the top). <br>
-> ![kurtosis.png](attachment:kurtosis.png)
+> <img src="/docs/images/linear_regression_assuptions/kurtosis.png"  width="800" />
 
 ## Summary
 
