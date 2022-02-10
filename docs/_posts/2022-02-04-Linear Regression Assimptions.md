@@ -45,11 +45,8 @@ Residuals Homoscedasticity refers to a condition in which the variance of the re
 
 The property of the data set to have a constant variance is called **homoscedasticity**, and its opposite, where the variance varies with the explanatory variable X is called **heteroscedasticity**.
 
-<img src="/docs/images/linear_regression_assuptions/Homo_residual.png", width="800"/>
 
-
-
-
+<img src="/docs/images/linear_regression_assuptions/Homo_residual.png"  width="800" />
 
 
 <center> Homoscedastic Residual Plot </center>
