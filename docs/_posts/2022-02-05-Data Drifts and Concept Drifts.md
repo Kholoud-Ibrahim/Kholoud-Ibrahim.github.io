@@ -17,7 +17,6 @@ Data Drift means that **the statistical distribution of the input data has been 
 
 It may still perform well on the data that is similar to the "old" one, but it became dramatically less useful when dealing with the new data regions.
 
-<!---excerpt-break-->
 
 ### Let's Take a clear example to describe data drifts.
 
@@ -39,9 +38,7 @@ Concept drift comes in different flavors.
 
 The relation between X and Y changes incrementally over time. <br>
 
-![Gradual Concept Drift](/docs/mages/data_drifts_and_concept_drifts){:class="img-responsive"}
-
-
+<img src="/docs/images/data_drifts_and_concept_drifts/gradual_concept_drift.png"  width="800" />
 
 
 #### As an example of gradual concept drift
@@ -55,6 +52,8 @@ A regression model that predicts the price of houses based on their size and loc
 The relation between X and Y is suddenly changed , and this usually happens because of the global events.
 
 ![image tooltip here](/_posts/1.png)
+
+<img src="/docs/images/data_drifts_and_concept_drifts/sudden_concept_drift.png"  width="800" />
 
 
 #### As an example of sudden concept drift
