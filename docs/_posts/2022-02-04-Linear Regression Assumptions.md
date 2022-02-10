@@ -48,16 +48,14 @@ The property of the data set to have a constant variance is called **homoscedast
 
 <img src="/docs/images/linear_regression_assuptions/Homo_residual.png"  width="800" />
 
-
 <center> Homoscedastic Residual Plot </center>
 <center>The variance of the residuals is constant, indicating no relation with X, so, there is no evidence that the model will behave worse at a certain range of X. </center>
 
 
 <img src="/docs/images/linear_regression_assuptions/Hetro_residual.png"  width="800" />
 
-
 <center> Heteroscedastic Residual Plot </center>
-<b1><center>The Variance of the residuals is low at low ranges of X and increases at the high ranges of X, indicating that the model will behave worse at high ranges of X. </b1></center>
+<center>The Variance of the residuals is low at low ranges of X and increases at the high ranges of X, indicating that the model will behave worse at high ranges of X. </center>
 
 
 
