@@ -50,7 +50,7 @@ The property of the data set to have a constant variance is called **homoscedast
 
 
 <center> Homoscedastic Residual Plot </center>
-<b1><center>The variance of the residuals is constant, indicating no relation with X, so, there is no evidence that the model will behave worse at a certain range of X. </b1></center>
+<center>The variance of the residuals is constant, indicating no relation with X, so, there is no evidence that the model will behave worse at a certain range of X. </center>
 
 
 <img src="/docs/images/linear_regression_assuptions/Hetro_residual.png"  width="800" />
