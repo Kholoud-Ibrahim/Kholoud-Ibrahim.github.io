@@ -1,3 +1,6 @@
+<img src="/docs/images/multicollinearity/multicollinearity.png"  width="800" />
+
+
 A key goal of fitting a linear regression model is to isolate the relationship between each independent variable (predictors) and the dependent variable (outcome), but multicollinearlity might be a strong obstacle to reach that goal.
 
 Multicollinearity occurs If a predictor is highly correlated with one or more other predictors, so that the predictors are no longer **"INDEPENDENT"** variables.
