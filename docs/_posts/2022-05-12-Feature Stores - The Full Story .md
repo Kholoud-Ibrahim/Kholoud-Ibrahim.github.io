@@ -50,7 +50,7 @@ Imagine we’re training a fraud detection model on a set of historical transact
 To avoid leaking future feature values, a point-in-time query retrieves the latest state of each feature that was available at each transaction time, and no later. For example, the transaction at time t2 can only use features available before time t2, and the transaction at t1 can’t use features from timestamps greater than t1.
 
 
-<img src="/docs/images/feature_stores/data_leakage.png"  width="800" />
+<img src="/docs/images/feature_stores/data_leakage.jpg"  width="800" />
 
 
 
