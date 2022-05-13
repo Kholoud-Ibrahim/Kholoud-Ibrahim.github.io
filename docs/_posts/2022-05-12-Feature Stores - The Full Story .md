@@ -105,7 +105,7 @@ To understand how features are organized inside the feature store , let's first 
 
 *One of the popular designs is to create one feature table for each entity , which contains all the features that descibe this particular entity.*
 
-Feature Store of an organiztion contains serveral ML Projects , and each ML project contains one or more feature tables and each feature table contains one or more feature that descibes a certain entity or set of entities. 
+Feature Store of an organization contains serveral ML Projects , and each ML project contains one or more feature tables and each feature table contains one or more feature that descibes a certain entity or set of entities. 
 
 
 ## Summary
