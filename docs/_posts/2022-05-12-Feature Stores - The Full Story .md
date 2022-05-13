@@ -31,19 +31,19 @@ Most of current commerical the feature stores provide a visual user interface fo
 
 **3.Decoupling ML Models from Data infrastructure** :  ML systems built on traditional data infrastructure are often strongly coupled to databases, object stores, streams, and files. A result of this coupling,is that any change in data infrastructure may break dependent ML systems. feature store decouples ML models from the data infrastructure by providing a single data access layer to access any needed feature for model serving or training.
 
-**4.Avoid Training serving Skew** : Training-serving skew is a difference between performance during training and performance during serving. This skew can be caused by many reasons but the most common reason is dual implementations of data retrieval for training and serving can lead to inconsistencies in data. <br>  
+**4.Avoid Training serving Skew** : Training-serving skew is a difference between performance during training and performance during serving. This skew can be caused by many reasons but the most common reason is dual implementations of data retrieval for training and serving,which can lead to inconsistencies in data. <br>  
 
-As models are trained on engineered datasets, it’s imperative to apply the same transformations to data sent for prediction. This often means rewriting feature engineering code, sometimes in a different language, integrating it in your prediction workflow, and running it at prediction time. This whole process is not only time-consuming, it can also introduce inconsistencies, as even the tiniest variation in a data transform can have a large impact on predictions.
+As models are trained on engineered datasets, it’s imperative to apply the same transformations to data sent for prediction. This often means rewriting feature engineering code, sometimes in a different language,integrating it in your prediction workflow,and running it at prediction time. This whole process is not only time-consuming,it can also introduce inconsistencies as even the tiniest variation in a data transform can have a large impact on predictions.
 
-Feature Store is a good solution for the training-serving skew issue as The definitions of features used to train a model must exactly match the features provided in online serving .
+Feature Store is a good solution for the training-serving skew issue as The definitions of features used to train a model must exactly match the features provided for online serving .
 
-the feature store let you feed both training and inference with the same transformed feature values, ensuring consistency to drive more accurate predictions. 
+the feature store let you feed both training and inference with the same transformed feature values,ensuring consistency to drive more accurate predictions. 
 
 **5.Avoid Data Leakage** :  [Data Leakage](https://en.wikipedia.org/wiki/Leakage_(machine_learning)) is accidentally using data in model training that wouldn’t be available at the time of prediction.
 
 Models with leakage perform unrealistically well in development, but they deliver poor model accuracy in production without the benefit of future data.
 
-Data Leakage usually happen with time-dependent features ( A featue value that got changed at time after the time of the generating the training label) . data scientists must ensure that the feature values are built only using data that could be known before the target was observed. For example, if a label was generated at time t1, any feature value should be generated beyond t1 ,and this concept is called **Point in time features**
+Data Leakage usually happen with time-dependent features (A featue value that got changed at time after the time of the generating the training label) . data scientists must ensure that the feature values are built only using data that could be known before the target was observed. For example, if a label was generated at time t1, any feature value should be generated beyond t1 ,and this concept is called **Point in time features**
 
 
 Let's use the example and diagram from [AWS Feature Store Blog](https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/#:~:text=Feature%20Store%20lets%20you%20define,time%20correct%20datasets%20for%20training) to explain how feature store solves the data leakage issue.
@@ -63,7 +63,7 @@ Most of the commerical feature stores are composed of Five main components : Reg
 ### Registry Component
 
 Centralized registry of feature definitions and metadata. The registry acts as a single source of truth for information about a feature in an organization. 
-It stores information like feature names , features description and data types and to which entities are these features related to.
+It stores information like feature names, features description and data types.
 
 ### Storage Component
 
@@ -107,7 +107,7 @@ To understand how features are organized inside the feature store , let's first 
 
 *One of the popular designs is to create one feature table for each entity , which contains all the features that descibe this particular entity.*
 
-Feature Store of an organization contains serveral ML Projects , and each ML project contains one or more feature tables and each feature table contains one or more feature that descibes a certain entity or set of entities. 
+Feature Store contains serveral ML Projects, and each ML project contains one or more feature tables and each feature table contains one or more feature that descibes a certain entity or set of entities. 
 
 
 ## Summary
