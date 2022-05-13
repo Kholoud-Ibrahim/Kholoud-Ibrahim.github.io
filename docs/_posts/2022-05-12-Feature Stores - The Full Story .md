@@ -29,7 +29,9 @@ Most of current commerical the feature stores provide a visual user interface fo
 
 <span style="color:red"> ***Important Note : Features Discovery and reusability are at the heart of the feature store , and the two capabiltiies are usually used together , so that the data scientist discover the available features within the store and then decides to reuse them.*** </span>
 
-**3.Avoid Training serving Skew** : Training-serving skew is a difference between performance during training and performance during serving. This skew can be caused by many reasons but the most common reason is dual implementations of data retrieval for training and serving can lead to inconsistencies in data. <br>  
+**3.Decoupling ML Models from Data infrastructure** :  ML systems built on traditional data infrastructure are often strongly coupled to databases, object stores, streams, and files. A result of this coupling, however, is that any change in data infrastructure may break dependent ML systems. feature store decouples ML models from the data infrastructure by providing a single data access layer to access any needed feature for model serving or model training.
+
+**4.Avoid Training serving Skew** : Training-serving skew is a difference between performance during training and performance during serving. This skew can be caused by many reasons but the most common reason is dual implementations of data retrieval for training and serving can lead to inconsistencies in data. <br>  
 
 As models are trained on engineered datasets, it’s imperative to apply the same transformations to data sent for prediction. This often means rewriting feature engineering code, sometimes in a different language, integrating it in your prediction workflow, and running it at prediction time. This whole process is not only time-consuming, it can also introduce inconsistencies, as even the tiniest variation in a data transform can have a large impact on predictions.
 
@@ -37,7 +39,7 @@ Feature Store is a good solution for the training-serving skew issue as The defi
 
 the feature store let you feed both training and inference with the same transformed feature values, ensuring consistency to drive more accurate predictions. 
 
-**4.Avoid Data Leakage** :  [Data Leakage](https://en.wikipedia.org/wiki/Leakage_(machine_learning) is accidentally using data in model training that wouldn’t be available at the time of prediction.
+**5.Avoid Data Leakage** :  [Data Leakage](https://en.wikipedia.org/wiki/Leakage_(machine_learning) is accidentally using data in model training that wouldn’t be available at the time of prediction.
 
 Models with leakage perform unrealistically well in development, but they deliver poor model accuracy in production without the benefit of future data.
 
