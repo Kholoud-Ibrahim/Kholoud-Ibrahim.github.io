@@ -10,7 +10,7 @@ As a starting point ,to be able to answer this question , we need to primarily k
 
 **A Feature** is any measurable input that can be used in a predictive model — it could be the color of an object or the sound of someone’s voice or a height of a person ..etc.
 
-For example if we are building a predictive model for credit card fraud detection , features can be the total number of transactions , the total amount of the transactions , the time elapsed between each two transactions , and these features will feed the model to be able to predict whether a credit card is fraudlent or not.
+For example if we are building a predictive model for credit card fraud detection , features can be the total number of transactions , the total amount of the transactions,the time elapsed between each two transactions , and these features will feed the model to be able to predict whether a credit card is fraudlent or not.
 
 **A Feature Store**  is a platform where all features are stored, centralized, accessible to everyone for the explicit purpose of being used to either train models or make predictions .
 <img src="/docs/images/feature_stores/overview.png"  width="800" />
