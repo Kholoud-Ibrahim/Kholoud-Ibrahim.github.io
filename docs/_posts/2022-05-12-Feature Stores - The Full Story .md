@@ -43,9 +43,9 @@ the feature store let you feed both training and inference with the same transfo
 
 Models with leakage perform unrealistically well in development, but they deliver poor model accuracy in production without the benefit of future data.
 
-Data Leakage usually happen with time-dependent features (A featue value that got changed at time after the time of the generating the training label) . data scientists must ensure that the feature values are built only using data that could be known before the target was observed. For example, if a label was generated at time t1, any feature value should be generated beyond t1 ,and this concept is called **Point in time features**
+Data Leakage usually happen with time-dependent features (A featue value that got changed at time after the time of the generating the training label) . data scientists must ensure that the feature values are built only using data that could be known before the target was observed. For example, if a label was generated at time t1, any feature value should be generated beyond t1 ,and this concept is called **Point in time features**.
 
-
+.
 Let's use the example and diagram from [AWS Feature Store Blog](https://aws.amazon.com/blogs/machine-learning/build-accurate-ml-training-datasets-using-point-in-time-queries-with-amazon-sagemaker-feature-store-and-apache-spark/#:~:text=Feature%20Store%20lets%20you%20define,time%20correct%20datasets%20for%20training) to explain how feature store solves the data leakage issue.
 
 Imagine we’re training a fraud detection model on a set of historical transactions.and the features are mainly related to the consumer, merchant, and credit card. and in this case the feature values change over time.
