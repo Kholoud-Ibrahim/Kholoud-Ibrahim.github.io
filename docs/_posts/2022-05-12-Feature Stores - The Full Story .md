@@ -90,6 +90,24 @@ The feature store represents a black box for the end user. and the only way to a
 **Retrieve training datasets.** <br>
 **Retrieve online features.** <br>
 
+
+## How features are organized inside the feature store ?
+
+To understand how features are organized inside the feature store , let's first define some of feature store important terms :
+
+**Entity** : An entity is any domain object that can be modeled and about which information can be stored. such as persons, places, things, or events.
+
+**Feature** : A Feature is any measurable property that can be used in a predictive model.
+
+<span style="color:red"> ***Features are the properties that describe the entities , for example number of transactions can be a feature for the entity credit card.***</span>
+
+**Feature Table** : The logical grouping and schema of entities and related features.
+
+*One of the popular designs is to create one feature table for each entity , which contains all the features that descibe this particular entity.*
+
+Feature Store of an organiztion contains serveral ML Projects , and each ML project contains one or more feature tables and each feature table contains one or more feature that descibes a certain entity or set of entities. 
+
+
 ## Summary
 
 Feature stores if not already ubiquitous should be the next must-have step for every organisation that aims to build the best AI products without having to lose their bandwidth on operational purposes.
