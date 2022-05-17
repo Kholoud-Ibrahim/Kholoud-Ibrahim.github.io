@@ -19,7 +19,7 @@ For example, if we are building a predictive model for credit card fraud detecti
 
 **1.Reuseability**: That's the key word and the main purpose of a feature store. It is simply the capability of reusing features across different machine learning models within the organization. <br>  
 
-If you don’t reuse features across different models, you will end up with a new feature pipeline for each and every new model you put into production! br />
+If you don’t reuse features across different models, you will end up with a new feature pipeline for each and every new model you put into production! <br>
 
 The Feature store prevents reinventing the wheel and developing a new data pipeline for each machine learning model by enabling the reuseability of the already existing features within the store.
 
