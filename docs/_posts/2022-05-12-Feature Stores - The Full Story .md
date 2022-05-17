@@ -1,7 +1,7 @@
 The whole story started when the feature store concept was introduced by Uber in 2017 with the launch of their Michelangelo platform. It is essentially a purpose-built data platform for machine learning features.
 
 Fast forward a few years, and in less than two years, Hopsworks and Feast, two open-source feature store projects, were launched. Then tech giants such as Google (Vertex AI), Amazon (SageMaker), and Databricks were also quick to propose their own fully-managed feature store platforms.
-<img src="/docs/images/feature_stores/timeline.png"  width="810" />
+<img src="/docs/images/feature_stores/timeline.png"  width="800" />
 
 
 ## What is a feature store?
