@@ -15,7 +15,7 @@ In order to analyze survival data, we need to make assumptions about why censori
 
 In general understanding the reason of the censoring will heavily affect the results fairness.
 
-## The Kaplan-Meie Survival Curve
+## The Kaplan-Meier Survival Curve
 
 The Survival Function can be defined as :
 
