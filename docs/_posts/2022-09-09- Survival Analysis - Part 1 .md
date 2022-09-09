@@ -41,7 +41,7 @@ Let's firstly define 3 variables:
 
 By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability)
 
-**P(T>dk) = P(T>dk|T>dk-1)P(T>dk-1) **
+**P(T>dk) = P(T>dk) **
 
 The fact that dk-1 < dk implies that P(T>dk|T$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
 
