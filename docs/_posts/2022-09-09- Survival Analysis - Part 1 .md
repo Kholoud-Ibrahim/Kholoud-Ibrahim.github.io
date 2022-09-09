@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Survival Analysis - Part 1"
+categories: updates
+---
+
 Suppose that you have conducted a five-year medical study in which patients have been treated for cancer. We would like to fit a model to predict a patient's survival time, using features such as baseline health measurements, type of treatment, tumour dimensions,... At first pass , this may sound like an ordinary regression problem, but there is an important complication: what if the study duration is finished and some patients are still alive, so we don't know their true survival time? Such patients' survival time is said to be **"censored"**. 
 We do not want to discard this subset of surviving patients, as the fact that they survived for at least 5 years is considered valuable information that we want to benefit from . However, it is still not clear how to make use of this information using the traditional well-known statistical techniques.
 
