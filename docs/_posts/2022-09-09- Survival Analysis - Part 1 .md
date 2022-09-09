@@ -43,7 +43,7 @@ By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_pro
 
 **P(T>dk) = P(T>dk) **
 
-The fact that dk-1 < dk implies that P(T>dkوT$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
+The fact that dk-1 < dk implies that P(T>dk &#124;T$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
 
 So **P(T>dk)=P(T>dk,T >dk-1)P(T>dk-1)** <br>
 by plugging the survival function we can say **S(dk)=P(T>dk,T >dk-1)S(dk-1)**
