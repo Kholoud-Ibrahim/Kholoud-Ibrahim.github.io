@@ -36,7 +36,7 @@ Now, we have seen that estimating S(t) is complicated by the presence of censori
 
 Let's firstly define 3 variables:
 
-**dk :denote the K unique death times among the non censored patients, so d1 < d2 < d3 < d4 < .....<dk.**<br>
+**dk :denote the K unique death times among the non censored patients, so d1 <d2 < .....<dk.**<br>
 **qk :denote the number of patients who died at time dk.**</br>
 **rk :denote the number of patients alive and in the study just before dk: these are at risk patients.**<br>
 
@@ -46,7 +46,7 @@ By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_pro
 
 The fact that dk-1 < dk implies that P(T>dk|T$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
 
-So **P(T>dk)=P(T>dk|T >dk-1)P(T>dk-1)** </br>
+So **P(T>dk)=P(T>dk|T >dk-1)P(T>dk-1)** <br>
 by plugging the survival function we can say **S(dk)=P(T>dk|T >dk-1)S(dk-1)**
 
 Let's now compute the term P(T>dk|T >dk-1), which asks for the probability for a patient to survive at least till time dk.
