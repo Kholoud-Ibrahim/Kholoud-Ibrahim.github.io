@@ -40,9 +40,9 @@ Let's firstly define 3 variables:
 **qk :denote the number of patients who died at time dk.**<br>
 **rk :denote the number of patients alive and in the study just before dk: these are at risk patients.**<br>
 
-By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability): 
+By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability)
 
-**P(T>dk) = P(T>dk|T >dk-1)P(T>dk-1) + P(T>dk|T$\le$dk-1)P(T$\le$dk-1)**
+**P(T>dk) = P(T>dk|T >dk-1)P(T>dk-1) + P(T>dk|T<=dk-1)P(T<=dk-1)**
 
 The fact that dk-1 < dk implies that P(T>dk|T$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
 
@@ -52,9 +52,7 @@ by plugging the survival function we can say **S(dk)=P(T>dk|T >dk-1)S(dk-1)**
 Let's now compute the term P(T>dk|T >dk-1), which asks for the probability for a patient to survive at least till time dk.
 For simplicity its 1- probability for a patient to die at time dk, 1-(qk/rk) = (rk-qk)/rk
 
-And this leads to **Kaplan-Meier estimater for survival curve**
-                  **S(dk)={\displaystyle \prod_{n=1}^{\infinity} a_n}
-
+And this leads to **Kaplan-Meier estimater for survival curve** <br>
 
 $$S(dk)=\prod_{j=1}^k \frac{rj-qj}{rj}$$
 
