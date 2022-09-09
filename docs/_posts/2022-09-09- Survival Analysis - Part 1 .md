@@ -58,7 +58,7 @@ And this leads to **Kaplan-Meier estimater for survival curve**
 
 $$S(dk)=\prod_{j=1}^k \frac{rj-qj}{rj}$$
 
-![kaplan_meier.png](attachment:kaplan_meier.png)
+<img src="/docs/images/kaplan_meier.png"  width="800" />
 
 Each point in the solid step-like curve shows the estimated probability past the time indicated on the horizontel axis, the estimated probability of surviving past 20 months is 71%.
 
