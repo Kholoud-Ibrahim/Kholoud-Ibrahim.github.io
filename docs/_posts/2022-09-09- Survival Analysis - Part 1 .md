@@ -45,10 +45,10 @@ By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_pro
 
 The fact that dk-1 < dk implies that P(T>dk|T$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
 
-So **P(T>dk)=P(T>dk|T >dk-1)P(T>dk-1)** <br>
-by plugging the survival function we can say **S(dk)=P(T>dk|T >dk-1)S(dk-1)**
+So **P(T>dk)=P(T>dk,T >dk-1)P(T>dk-1)** <br>
+by plugging the survival function we can say **S(dk)=P(T>dk,T >dk-1)S(dk-1)**
 
-Let's now compute the term P(T>dk|T >dk-1), which asks for the probability for a patient to survive at least till time dk.
+Let's now compute the term P(T>dk,T >dk-1), which asks for the probability for a patient to survive at least till time dk.
 For simplicity its 1- probability for a patient to die at time dk, 1-(qk/rk) = (rk-qk)/rk
 
 And this leads to **Kaplan-Meier estimater for survival curve** <br>
