@@ -25,7 +25,6 @@ The Survival Function can be defined as :
 The function above describes the probability of surviving past time t, then S(t) represents the probability that a patient dies later than the time t.
 
 
-
 The below investigation is motivated by [BrainCancer dataset](https://rdrr.io/cran/ISLR2/man/BrainCancer.html) which contains the survival times of 88 brain cancer patients. <br>
 
 Now, let's consider estimating the survival curve, To estimate S(20)= P(T>20) = The probability that a patient survives for at least 20 months after the brain cancer treatment, this turns out to be 48/88 or approximately 55%. However, this is not quite right, as 17 out of the 40 patient who were counted as unsurvived for at least 20 months were actually censored, and this analysis implicitly assumes that T < 20 for all of the 17 censored patients; ofcourse that's not true.
@@ -40,9 +39,8 @@ Let's firstly define 3 variables:
 **qk :denote the number of patients who died at time dk.**<br>
 **rk :denote the number of patients alive and in the study just before dk: these are at risk patients.**<br>
 
-By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability)
 
-**P(T>dk) = P(T>dk|T >dk-1)P(T>dk-1) + P(T>dk|T<=dk-1)P(T<=dk-1)**
+**P(T>dk) = P(T>dk|T>dk-1)P(T>dk-1) + P(T>dk|T<=dk-1)P(T<=dk-1)**
 
 The fact that dk-1 < dk implies that P(T>dk|T$\le$dk-1) =0, it impossible for a patient to survive past time dk if he or she didnot survive until dk-1.
 
