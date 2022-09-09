@@ -20,7 +20,7 @@ In general understanding the reason of the censoring will heavily affect the res
 The Survival Function can be defined as :
 
 **S(t)=P(T>t)** <br>                                                    
-**T: time when event of interest occurs.**</br>
+**T: time when event of interest occurs.**<br>
 
 The function above describes the probability of surviving past time t, then S(t) represents the probability that a patient dies later than the time t.
 
@@ -36,9 +36,9 @@ Now, we have seen that estimating S(t) is complicated by the presence of censori
 
 Let's firstly define 3 variables:
 
-**dk :denote the K unique death times among the non censored patients, so d1 < d2 < d3 < d4 < .....<dk.**</br>
+**dk :denote the K unique death times among the non censored patients, so d1 < d2 < d3 < d4 < .....<dk.**<br>
 **qk :denote the number of patients who died at time dk.**</br>
-**rk :denote the number of patients alive and in the study just before dk: these are at risk patients.**</br>
+**rk :denote the number of patients alive and in the study just before dk: these are at risk patients.**<br>
 
 By [the law of total probability](https://en.wikipedia.org/wiki/Law_of_total_probability): 
 
