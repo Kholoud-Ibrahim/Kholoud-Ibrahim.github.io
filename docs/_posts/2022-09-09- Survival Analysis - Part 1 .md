@@ -69,10 +69,10 @@ $$S(dk)=\prod_{j=1}^k \frac{rj-qj}{rj}$$
 
 Each point in the solid step-like curve shows the estimated probability past the time indicated on the horizontel axis, the estimated probability of surviving past 20 months is 71%.
 
-The sequential construction of the Kaplan_Meier estimator (starting from  time 0 and mapping out the observed events as they unfold in time) is fundtemtal to many key techniques in survival analysis.
+The sequential construction of the Kaplan_Meier estimator (starting from  time 0 and mapping out the observed events as they unfold in time) is fundemtal to many key techniques in survival analysis.
 
 ## Conclusion
 
 To conclude, Kaplan-Meier method is a clever method of statistical treatment of survival times which not only makes proper allowances for those observations that are censored, but also makes use of the information from these subjects up to the time when they are censored.
 
-<font color='red'>**Disclaimer: all the examples,derivations,numbers and charts are taken from the text book "ِAn Introduction to Statistical Learning with Applications in R" text book**. </font>
+<font color='red'>**Disclaimer: all the examples,derivations,numbers and charts are taken from the text book "An Introduction to Statistical Learning with Applications in R"**. </font>
